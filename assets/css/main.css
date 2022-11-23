@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #E0D9F6;
+		background: white;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2470,7 +2470,7 @@ input, select, textarea {
 			}
 
 		.icon.major {
-			background: #586AE2;
+			background: black;
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
@@ -2503,7 +2503,7 @@ input, select, textarea {
 				}
 
 				.icon.major.alt:before {
-					color: #C252E1  !important;
+					color: white !important;
 					text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 				}
 
@@ -4118,5 +4118,24 @@ input, select, textarea {
   }
 
   .title {
-    color: #6EcbF5;
+    color: white;
+    font-size: 80px !important;
+    font-weight: 1000 !important;
+
+  }
+
+  .sub-title {
+    color: #ffff00;
+    font-size: 35px !important;
+   font-weight: 1000 !important;
+
+  }
+
+  .button {
+    background-color: #ffff00 !important;
+    color: #0d2544 !important;
+  }
+
+  .introduction {
+    color: black;
   }
