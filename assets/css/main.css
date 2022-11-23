@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #1c1d26;
+		background: #E0D9F6;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -121,7 +121,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: white;
 		font-weight: 300;
 	}
 
@@ -134,7 +134,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: white;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -308,7 +308,7 @@ input, select, textarea {
 
 	@-webkit-keyframes spinner-hide {
 		0% {
-			color: rgba(255, 255, 255, 0.15);
+			color: rgba(252, 197, 197, 0.15);
 			z-index: 100001;
 			-moz-transform: scale(1) rotate(0deg);
 			-webkit-transform: scale(1) rotate(0deg);
@@ -2154,7 +2154,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #ffffff;
+		color: white;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2211,7 +2211,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #C252E1;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 300;
@@ -2269,7 +2269,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
+			color: #C252E1;
 			background: #1c1d26;
 		}
 
@@ -2470,7 +2470,7 @@ input, select, textarea {
 			}
 
 		.icon.major {
-			background: #272833;
+			background: #586AE2;
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
@@ -2503,7 +2503,7 @@ input, select, textarea {
 				}
 
 				.icon.major.alt:before {
-					color: #272833 !important;
+					color: #C252E1  !important;
 					text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 				}
 
@@ -3452,7 +3452,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/Background.jpeg");
+		background-image: url("../../images/fortnite-fracture-chapter-3-ending-event-1900x600-c485f66b5d76.jpeg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -4115,4 +4115,8 @@ input, select, textarea {
     width: 50%;
     /* border: 3px solid green; */
     /* padding: 10px; */
+  }
+
+  .title {
+    color: #6EcbF5;
   }
