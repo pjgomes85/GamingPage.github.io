@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: white;
+		background: #0a0a0b ;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3452,7 +3452,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/fortnite-fracture-chapter-3-ending-event-1900x600-c485f66b5d76.jpeg");
+		background-image: url("../../images/Blue\ White\ Neon\ Gaming\ Channel\ Tips\ YouTube\ Channel\ Art.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -4136,12 +4136,12 @@ input, select, textarea {
     color: #0d2544 !important;
   }
 
-  .introduction {
+  /* .introduction {
     color: black;
-  }
+  } */
 
-  /* Button */
-.btn-2,
+  /* Button  overlay effect */
+/* .btn-2,
 .btn-2 *,
 .btn-2 :after,
 .btn-2 :before,
@@ -4187,6 +4187,7 @@ input, select, textarea {
   overflow: hidden;
   padding: 0.8rem 3rem;
   position: relative;
+
 }
 .btn-2 span {
   mix-blend-mode: difference;
@@ -4201,4 +4202,4 @@ input, select, textarea {
 }
 .btn-2:hover:before {
   --progress: 0;
-}
+} */
