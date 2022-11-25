@@ -52,25 +52,79 @@
               <span class=""><img src="images/AMD Pack.jpg" width="500" height="300" alt="" /></span>
 							<p>The Ultimate Gaming Performance</p>
               <ul class="actions">
-                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                <div class="elfsight-app-50578f52-6549-4add-9696-0f9905255538 center"></div>
+                Input Lag Reducer Settings + Driver (AMD)
               </ul>
-              <p>Hello world</p>
+              <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-container"></div>
+                </div>
+              </div>
+              <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-container"></div>
+                </div>
+              </div>
+              <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-container"></div>
+                </div>
+              </div>
+            <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=GBP" data-sdk-integration-source="button-factory"></script>
+            <script>
+              function initPayPalButton() {
+                paypal.Buttons({
+                  style: {
+                    shape: 'rect',
+                    color: 'gold',
+                    layout: 'vertical',
+                    label: 'paypal',
+
+                  },
+
+                  createOrder: function(data, actions) {
+                    return actions.order.create({
+                      purchase_units: [{"description":"Windows Gaming PC Full Setup (Amd + Nvidia)","amount":{"currency_code":"GBP","value":6}}]
+                    });
+                  },
+
+                  onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(orderData) {
+
+                      // Full available details
+                      console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                      // Show a success message within this page, e.g.
+                      const element = document.getElementById('paypal-button-container');
+                      element.innerHTML = '';
+                      element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+                      // Or go to another URL:  actions.redirect('thank_you.html');
+
+                    });
+                  },
+
+                  onError: function(err) {
+                    console.log(err);
+                  }
+                }).render('#paypal-button-container');
+              }
+              initPayPalButton();
+            </script>
 						</header>
 
 
 
 						<!-- Lists -->
 							<section>
-								<h3>Lists</h3>
+								<!-- <h3>What's Inside</h3> -->
 								<div class="row">
 									<div class="col-6 col-12-xsmall">
 
-										<h4>Unordered</h4>
+										<h4>Description</h4>
 										<ul>
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Sagittis adipiscing lorem eleifend.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
+											<li>All the Windows configurations to make your PC Game Ready</li>
+											<li>Specific Nvidia/AMD Drivers for the best input delay and stable FPS</li>
+											<li>External softwares do Reduce Input Delay</li>
 										</ul>
 
 
@@ -78,7 +132,7 @@
 									</div>
 									<div class="col-6 col-12-xsmall">
 
-										<h4>Ordered</h4>
+										<!-- <h4>Ordered</h4>
 										<ol>
 											<li>Dolor pulvinar etiam magna etiam.</li>
 											<li>Etiam vel felis at lorem sed viverra.</li>
@@ -86,13 +140,13 @@
 											<li>Dolor pulvinar etiam magna etiam.</li>
 											<li>Etiam vel felis at lorem sed viverra.</li>
 											<li>Felis enim feugiat dolore viverra.</li>
-										</ol>
+										</ol> -->
 
 
 
 									</div>
 								</div>
-
+              </div>
 
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-0ad3213e-3d21-4506-a79f-9ca161c04cfd"></div>
@@ -108,7 +162,7 @@
             <!-- <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li> -->
           </ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a>Paulo Gomes</a></li>
 					</ul>
 				</footer>
 
